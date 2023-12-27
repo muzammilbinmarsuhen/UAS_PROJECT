@@ -1,0 +1,164 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block title %}
+ Home
+{% endblock title %}
+
+
+
+{% block menu %}
+
+
+<nav class="navbar navbar-expand-lg navbar-dark bg-primary">
+  <a class="navbar-brand" href="{% url 'index' %}">MUZAMMIL</a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+  <span class="navbar-toggler-icon"></span>
+  </button>
+
+  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+  <ul class="navbar-nav mr-auto">
+      <li class="nav-item active">
+          <a class="nav-link" href="{% url 'index' %}">Home <span class="sr-only"></span></a>
+      </li>
+      <li class="nav-item">
+          <a class="nav-link" href="{% url 'blog' %}">Blog</a>
+      </li>
+      <li class="nav-item">
+          <a class="nav-link" href="{% url 'contact' %}">Contact</a>
+      </li>
+      <li class="nav-item">
+          <a class="nav-link" href="{% url 'login' %}">Login</a>
+      </li>
+      
+  </ul>
+  <form class="form-inline my-2 my-lg-0">
+      <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+      <button class="btn btn-outline-light my-2 my-sm-0" type="submit">Search</button>
+  </form>
+  </div>
+</nav>
+{% endblock menu %}
+
+
+{% block content %}
+ <br>
+ <div class="card bg-dark text-white text-center" style="font-family: 'Sans-serif';">
+  <img class="card-img" src="{% static 'image/susu.jpg' %}" alt="Card image">
+  <div class="card-img-overlay">
+    <h5  class="me-5 d-none d-lg-block fs-4 fw-bold fst-italic">Senyuman oleh secangkir kopi</h5>
+    <p class="card-text">Lihatlah cappuccino, sebuah karya seni di atas cangkir. Foam yang lembut dan kopi yang kuat, menyatu dalam harmoni yang mempesona. Ia mengajarkan kita bahwa keindahan tak hanya terlihat, tetapi juga dirasakan.</p>
+  </div>
+</div>
+
+<br>
+  <footer class="bg-primary text-white text-center text-lg-start">
+
+    <section class="d-flex justify-content-center justify-content-lg-between p-4 border-bottom">
+      <!-- Left -->
+      <div class="me-5 d-none d-lg-block fs-4 fw-bold fst-italic">
+        <span>Hubungi Kami disosial media:</span>
+      </div>
+      <!-- Left -->
+  
+      <!-- Right -->
+      <div>
+        <a href="https://www.facebook.com/yusron.azka.1" class="me-4 link-secondary">
+          <i class="fab fa-facebook-f text-white"></i>
+        </a>
+        <a href="https://x.com/Muzammil1066710?t=SN5H3zaB9EDR5EpO_DTcnw&s=08" class="me-4 link-secondary">
+          <i class="fab fa-twitter text-white"></i>
+        </a>
+        <a href="" class="me-4 link-secondary">
+          <i class="fab fa-google text-white"></i>
+        </a>
+        <a href="https://instagram.com/azka.m_87?igshid=YzAwZjE1ZTI0Zg==" class="me-4 link-secondary">
+          <i class="fab fa-instagram text-white"></i>
+        </a>
+        <a href="https://wa.me/qr/UDF6LO4JJUMEF1" class="me-4 link-secondary">
+          <i class="fab fa-whatsapp text-white"></i>
+        </a>
+        <a href="" class="me-4 link-secondary">
+          <i class="fab fa-github text-white"></i>
+        </a>
+        <a href="https://www.tiktok.com/@jamilgenesis19?_t=8h705k9wjCc&_r=1" class="me-4 link-secondary">
+          <i class="fab fa-tiktok text-white"></i>
+        </a>
+        <a href="https://youtube.com/@jamil1997?si=Y2CLvq1GGp3-lviR" class="me-4 link-secondary">
+          <i class="fab fa-youtube text-white"></i>
+        </a>
+      </div>
+      <!-- Right -->
+    </section>
+    <!-- Section: Social media -->
+
+    <!-- Grid container -->
+  <div class="container p-4">
+    <!--Grid row-->
+    <div class="row">
+      <!--Grid column-->
+      <div class="col-lg-6 col-md-12 mb-4 mb-md-0">
+        <h5 class="text-uppercase font-serif">SELAMAT DATANG</h5>
+    
+        <p class="text-justify">
+            Gabunglah dengan komunitas kami melalui sosial media untuk tetap terhubung dan mendapatkan pembaruan terkini. Kami menempatkan nilai tinggi pada membangun hubungan yang kuat dengan para pengunjung, dan setiap masukan atau saran dari Anda sangat kami hargai.
+    
+            Kami menjadikan privasi Anda sebagai prioritas utama, dan komitmen kami adalah melindungi informasi Anda dengan langkah-langkah keamanan yang teliti. Untuk pemahaman lebih lanjut, kami mengundang Anda untuk membaca kebijakan privasi kami.
+    
+            Terima kasih atas kunjungan Anda dan kontribusi Anda dalam memperkuat komunitas kami.
+        </p>
+      
+      </div>
+      <!--Grid column-->
+        <!--Grid column-->
+        <div class="col-lg-3 col-md-6 mb-4 mb-md-0">
+          <h5 class="text-uppercase">Persiapan</h5>
+  
+          <ul class="list-unstyled mb-0">
+            <li>
+              <a href="#!" class="text-white">jangandiklik</a>
+            </li>
+            <li>
+              <a href="#!" class="text-white">jangandiklik</a>
+            </li>
+            <li>
+              <a href="#!" class="text-white">jangandiklik</a>
+            </li>
+            <li>
+              <a href="#!" class="text-white">jangandiklik</a>
+            </li>
+          </ul>
+        </div>
+        <!--Grid column-->
+  
+        <!--Grid column-->
+        <div class="col-lg-3 col-md-6 mb-4 mb-md-0">
+          <h5 class="text-uppercase mb-0">Persiapan</h5>
+  
+          <ul class="list-unstyled">
+            <li>
+              <a href="#!" class="text-white">jangandiklik</a>
+            </li>
+            <li>
+              <a href="#!" class="text-white">jangandiklik</a>
+            </li>
+            <li>
+              <a href="#!" class="text-white">jangandiklik</a>
+            </li>
+            <li>
+              <a href="#!" class="text-white">jangandiklik</a>
+            </li>
+          </ul>
+        </div>
+        <!--Grid column-->
+      </div>
+      <!--Grid row-->
+    </div>
+    <!-- Grid container -->
+    <div class="text-center p-4" style="background-color: rgba(0, 0, 0, 0.2);">
+      © Not Copyright:
+      <a class="text-white" href="https://mdbootstrap.com/">j7958962@gmail.com</a>
+    </div>
+  </footer>
+{% endblock content %}
+

@@ -1,0 +1,251 @@
+{% extends 'base.html' %}
+{% load static %}
+
+
+{% block title %}
+ Contact
+{% endblock title %}
+
+    
+{% block menu %}
+<nav class="navbar navbar-expand-lg navbar-dark bg-primary">
+    <a class="navbar-brand" href="#">MUZAMMIL</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+    <ul class="navbar-nav mr-auto">
+        <li class="nav-item active">
+            <a class="nav-link" href="{% url 'index' %}">Home <span class="sr-only"></span></a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" href="{% url 'blog' %}">Blog</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" href="{% url 'contact' %}">Contact</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" href="{% url 'login' %}">Login</a>
+        </li>
+        
+    </ul>
+    <form class="form-inline my-2 my-lg-0">
+        <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+        <button class="btn btn-outline-light my-2 my-sm-0" type="submit">Search</button>
+    </form>
+    </div>
+</nav>
+{% endblock menu %}
+
+{% block content %}
+<div class="container">
+<!--Section: Contact v.2-->
+<section class="mb-4">
+
+ <!--Section heading-->
+ <h2 class="h1-responsive font-weight-bold text-center my-4">Contact us</h2>
+ <!--Section description-->
+ <p class="text-center w-responsive mx-auto mb-5">Do you have any questions? Please do not hesitate to contact us directly. Our team will come back to you within
+     a matter of hours to help you.</p>
+
+ <div class="row">
+
+     <!--Grid column-->
+     <div class="col-md-9 mb-md-0 mb-5">
+         <form id="contact-form" name="contact-form" action="mail.php" method="POST">
+
+             <!--Grid row-->
+             <div class="row">
+
+                 <!--Grid column-->
+                 <div class="col-md-6">
+                     <div class="md-form mb-0">
+                         <input type="text" id="name" name="name" class="form-control">
+                         <label for="name" class="">Your name</label>
+                     </div>
+                 </div>
+                 <!--Grid column-->
+
+                 <!--Grid column-->
+                 <div class="col-md-6">
+                     <div class="md-form mb-0">
+                         <input type="text" id="email" name="email" class="form-control">
+                         <label for="email" class="">Your email</label>
+                     </div>
+                 </div>
+                 <!--Grid column-->
+
+             </div>
+             <!--Grid row-->
+
+             <!--Grid row-->
+             <div class="row">
+                 <div class="col-md-12">
+                     <div class="md-form mb-0">
+                         <input type="text" id="subject" name="subject" class="form-control">
+                         <label for="subject" class="">Subject</label>
+                     </div>
+                 </div>
+             </div>
+             <!--Grid row-->
+
+             <!--Grid row-->
+             <div class="row">
+
+                 <!--Grid column-->
+                 <div class="col-md-12">
+
+                     <div class="md-form">
+                         <textarea type="text" id="message" name="message" rows="2" class="form-control md-textarea"></textarea>
+                         <label for="message">Your message</label>
+                     </div>
+
+                 </div>
+             </div>
+             <!--Grid row-->
+
+         </form>
+
+         <div class="text-light text-md-left">
+             <a class="btn bg-primary" onclick="document.getElementById('contact-form').submit();">Send</a>
+         </div>
+         <div class="status"></div>
+     </div>
+     <!--Grid column-->
+
+     <!--Grid column-->
+     <div class="col-md-3 text-center">
+         <ul class="list-unstyled mb-0">
+             <li><i class="fas fa-map-marker-alt fa-2x"></i>
+                 <p>Indonesia</p>
+             </li>
+
+             <li><i class="fas fa-phone mt-4 fa-2x"></i>
+                 <p>+62 877-4324-1162</p>
+             </li>
+
+             <li><i class="fas fa-envelope mt-4 fa-2x"></i>
+                 <p>contact@mdbootstrap.com</p>
+             </li>
+         </ul>
+     </div>
+     <!--Grid column-->
+
+ </div>
+
+</section>
+<!--Section: Contact v.2-->
+</div>
+ 
+<footer class="bg-primary text-white text-center text-lg-start">
+
+  <section class="d-flex justify-content-center justify-content-lg-between p-4 border-bottom">
+    <!-- Left -->
+    <div class="me-5 d-none d-lg-block fs-4 fw-bold fst-italic">
+      <span>Hubungi Kami disosial media:</span>
+    </div>
+    <!-- Left -->
+
+    <!-- Right -->
+    <div>
+      <a href="https://www.facebook.com/yusron.azka.1" class="me-4 link-secondary">
+        <i class="fab fa-facebook-f text-white"></i>
+      </a>
+      <a href="https://x.com/Muzammil1066710?t=SN5H3zaB9EDR5EpO_DTcnw&s=08" class="me-4 link-secondary">
+        <i class="fab fa-twitter text-white"></i>
+      </a>
+      <a href="" class="me-4 link-secondary">
+        <i class="fab fa-google text-white"></i>
+      </a>
+      <a href="https://instagram.com/azka.m_87?igshid=YzAwZjE1ZTI0Zg==" class="me-4 link-secondary">
+        <i class="fab fa-instagram text-white"></i>
+      </a>
+      <a href="https://wa.me/qr/UDF6LO4JJUMEF1" class="me-4 link-secondary">
+        <i class="fab fa-whatsapp text-white"></i>
+      </a>
+      <a href="" class="me-4 link-secondary">
+        <i class="fab fa-github text-white"></i>
+      </a>
+      <a href="https://www.tiktok.com/@jamilgenesis19?_t=8h705k9wjCc&_r=1" class="me-4 link-secondary">
+        <i class="fab fa-tiktok text-white"></i>
+      </a>
+      <a href="https://youtube.com/@jamil1997?si=Y2CLvq1GGp3-lviR" class="me-4 link-secondary">
+        <i class="fab fa-youtube text-white"></i>
+      </a>
+    </div>
+    <!-- Right -->
+  </section>
+  <!-- Section: Social media -->
+
+ <!-- Grid container -->
+ <div class="container p-5">
+   <!--Grid row-->
+    <div class="row">
+     <!--Grid column-->
+     <div class="col-lg-6 col-md-12 mb-4 mb-md-0">
+      <h5 class="text-uppercase font-serif">SELAMAT DATANG</h5>
+  
+      <p class="text-justify">
+          Gabunglah dengan komunitas kami melalui sosial media untuk tetap terhubung dan mendapatkan pembaruan terkini. Kami menempatkan nilai tinggi pada membangun hubungan yang kuat dengan para pengunjung, dan setiap masukan atau saran dari Anda sangat kami hargai.
+  
+          Kami menjadikan privasi Anda sebagai prioritas utama, dan komitmen kami adalah melindungi informasi Anda dengan langkah-langkah keamanan yang teliti. Untuk pemahaman lebih lanjut, kami mengundang Anda untuk membaca kebijakan privasi kami.
+  
+          Terima kasih atas kunjungan Anda dan kontribusi Anda dalam memperkuat komunitas kami.
+      </p>
+    </div>
+  
+  
+     <!--Grid column-->
+
+     <!--Grid column-->
+     <div class="col-lg-3 col-md-6 mb-4 mb-md-0">
+       <h5 class="text-uppercase">Persiapan</h5>
+
+       <ul class="list-unstyled mb-0">
+         <li>
+           <a href="#!" class="text-white">jangandiklik</a>
+         </li>
+         <li>
+           <a href="#!" class="text-white">jangandiklik</a>
+         </li>
+         <li>
+           <a href="#!" class="text-white">jangandiklik</a>
+         </li>
+         <li>
+           <a href="#!" class="text-white">jangandiklik</a>
+         </li>
+       </ul>
+     </div>
+     <!--Grid column-->
+
+     <!--Grid column-->
+     <div class="col-lg-3 col-md-6 mb-4 mb-md-0">
+       <h5 class="text-uppercase mb-0">Persiapan</h5>
+
+       <ul class="list-unstyled">
+         <li>
+           <a href="#!" class="text-white">jangandiklik</a>
+         </li>
+         <li>
+           <a href="#!" class="text-white">jangandiklik</a>
+         </li>
+         <li>
+           <a href="#!" class="text-white">jangandiklik</a>
+         </li>
+         <li>
+           <a href="#!" class="text-white">jangandiklik</a>
+         </li>
+       </ul>
+     </div>
+     <!--Grid column-->
+   </div>
+   <!--Grid row-->
+ </div>
+ <!-- Grid container -->
+ <div class="text-center p-4" style="background-color: rgba(0, 0, 0, 0.2);">
+  © Not Copyright:
+  <a class="text-white" href="https://mdbootstrap.com/">j7958962@gmail.com</a>
+</div>
+</footer>
+{% endblock content %}
