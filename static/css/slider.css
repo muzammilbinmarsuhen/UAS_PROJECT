@@ -1,0 +1,191 @@
+.slider_section {
+    background-color: #004ff8;
+  }
+  
+  .carousel-inner {
+    background-color: transparent;
+  }
+  
+  h1 {
+    font-family: 'vector text effect';
+    font-size: 2em;
+    color: #333;
+    text-align: center;
+    line-height: 1.5;
+  }
+  
+  /* Gaya khusus untuk kata "Selamat" */
+  h1 span.Selamat {
+    font-style: italic;
+  }
+  
+  /* Gaya khusus untuk kata "Datang" */
+  h1 span.Datang {
+    color: #FFFF00;
+    display: inline-block;
+    overflow: hidden;
+    white-space: nowrap;
+    margin: 0;
+    padding: 0;
+    animation: typing 1.5s steps(12, end) infinite, blink-caret 0.5s step-end infinite;
+  }
+  
+  @keyframes typing {
+    from {
+      width: 0;
+    }
+    to {
+      width: 100%;
+    }
+  }
+  
+  @keyframes blink-caret {
+    from,
+    to {
+      border-color: transparent;
+    }
+    50% {
+      border-color: #FFFFFF;
+    }
+  }
+  
+  /* Contoh tambahan untuk memberikan efek bayangan pada teks */
+  h1::after {
+    content: '';
+    display: block;
+    width: 100%;
+    height: 2px;
+    background: linear-gradient(to right, #FF0000, #FFFF00, #00FF00, #0000FF, #FFFFFF);
+    margin-top: 8px;
+    background-size: 400% 100%;
+    animation: colorChange 8s linear infinite;
+  }
+  
+  @keyframes colorChange {
+    0% {
+      background-position: 100% 0;
+    }
+    100% {
+      background-position: -100% 0;
+    }
+  }
+  
+  /* Bagian Slider Section */
+  .slider_section {
+    flex: 1;
+    display: flex;
+    align-items: center;
+    position: relative;
+    padding: 45px 0 145px 0;
+  }
+  
+  .slider_section .row {
+    align-items: center;
+  }
+  
+  .slider_section #customCarousel1 {
+    width: 100%;
+    position: unset;
+  }
+  
+  .slider_section .detail-box {
+    color: #00204a;
+  }
+  
+  .slider_section .detail-box h1 {
+    font-size: 3rem;
+    font-weight: bold;
+    text-transform: uppercase;
+    margin-bottom: 15px;
+    color: #ffffff;
+  }
+  
+  .slider_section .detail-box p {
+    color: #fefefe;
+    font-size: 14px;
+  }
+  
+  .slider_section .detail-box .btn-box {
+    display: flex;
+    margin: 0 -5px;
+    margin-top: 25px;
+  }
+  
+  .slider_section .detail-box .btn-box a {
+    margin: 5px;
+    text-align: center;
+    width: 165px;
+  }
+  
+  .slider_section .detail-box .btn-box .btn1 {
+    display: inline-block;
+    padding: 10px 15px;
+    background-color: #00bbf0;
+    color: #ffffff;
+    border-radius: 0;
+    transition: all 0.3s;
+    border: none;
+  }
+  
+  .slider_section .detail-box .btn-box .btn1:hover {
+    background-color: #007fa4;
+  }
+  
+  .slider_section .detail-box .btn-box .btn2 {
+    display: inline-block;
+    padding: 10px 15px;
+    background-color: #000000;
+    color: #ffffff;
+    border-radius: 0;
+    transition: all 0.3s;
+    border: none;
+  }
+  
+  .slider_section .detail-box .btn-box .btn2:hover {
+    background-color: black;
+  }
+  
+  .slider_section .img-box {
+    margin: 45px 0;
+  }
+  
+  /* Animasi pada foto */
+  @keyframes moveUpDown {
+    0% {
+      transform: translateY(0);
+    }
+    50% {
+      transform: translateY(-10px);
+    }
+    100% {
+      transform: translateY(0);
+    }
+  }
+  
+  .slider_section .img-box img {
+    width: 100%;
+    height: auto;
+    animation: moveUpDown 2s infinite;
+  }
+  
+  .slider_section .carousel-indicators {
+    position: unset;
+    margin: 0;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .slider_section .carousel-indicators li {
+    background-color: #ffffff;
+    width: 12px;
+    height: 12px;
+    border-radius: 100%;
+    opacity: 1;
+  }
+  
+  .slider_section .carousel-indicators li.active {
+    width: 20px;
+    height: 20px;
+    background-color: #00bbf0;
+  }
+  

@@ -42,16 +42,106 @@
 
 
 {% block content %}
- <br>
- <div class="card bg-dark text-white text-center" style="font-family: 'Sans-serif';">
-  <img class="card-img" src="{% static 'image/susu.jpg' %}" alt="Card image">
-  <div class="card-img-overlay">
-    <h5  class="me-5 d-none d-lg-block fs-4 fw-bold fst-italic">Senyuman oleh secangkir kopi</h5>
-    <p class="card-text">Lihatlah cappuccino, sebuah karya seni di atas cangkir. Foam yang lembut dan kopi yang kuat, menyatu dalam harmoni yang mempesona. Ia mengajarkan kita bahwa keindahan tak hanya terlihat, tetapi juga dirasakan.</p>
-  </div>
-</div>
 
-<br>
+    <!-- slider section -->
+    <section class="slider_section ">
+      <link rel="stylesheet" href="{% static 'css/slider.css' %}">
+      <div id="customCarousel1" class="carousel slide" data-ride="carousel">
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <div class="container ">
+              <div class="row">
+                <div class="col-md-6 ">
+                  <div class="detail-box">
+
+                    <h1>
+                      <span class="Selamat">Selamat</span> <br>
+                      <span class="Datang">Datang</span>
+                    </h1>
+                    
+                    <p>
+                      Halo pembaca yang terhormat, bagaimana kabar Kamu? Selamat datang di artikel kami yang akan membahas tentang website yang inspiratif dan contoh desain menarik. Kami senang bisa berbagi informasi ini dengan Kamu. Teruskan membaca untuk menemukan ide-ide kreatif dan solusi desain yang dapat menginspirasi Kamu dalam membangun berbagai web yang menarik. Selamat membaca!
+                    </p>
+                    <div class="btn-box">
+                      <a href="" class="btn1">
+                        Read More
+                      </a>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-md-6">
+                  <div class="img-box">
+                    <img src="{% static 'image/ya.png' %}" alt="">
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="carousel-item ">
+            <div class="container ">
+              <div class="row">
+                <div class="col-md-6 ">
+                  <div class="detail-box">
+                    <h1>
+                      <span class="Selamat">Selamat</span> <br>
+                      <span class="Datang">Datang</span>
+                    </h1>
+                    <p>
+                      Halo pembaca yang terhormat, bagaimana kabar Kamu? Selamat datang di artikel kami yang akan membahas tentang website yang inspiratif dan contoh desain menarik. Kami senang bisa berbagi informasi ini dengan Kamu. Teruskan membaca untuk menemukan ide-ide kreatif dan solusi desain yang dapat menginspirasi Kamu dalam membangun berbagai web yang menarik. Selamat membaca!
+                    </p>
+                    <div class="btn-box">
+                      <a href="" class="btn1">
+                        Read More
+                      </a>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-md-6">
+                  <div class="img-box">
+                    <img src="{% static 'image/ya.png' %}" alt="">
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <div class="container ">
+              <div class="row">
+                <div class="col-md-6 ">
+                  <div class="detail-box">
+                    <h1>
+                      <span class="Selamat">Selamat</span> <br>
+                      <span class="Datang">Datang</span>
+                    </h1>
+                    <p>
+                      Halo pembaca yang terhormat, bagaimana kabar Kamu? Selamat datang di artikel kami yang akan membahas tentang website yang inspiratif dan contoh desain menarik. Kami senang bisa berbagi informasi ini dengan Kamu. Teruskan membaca untuk menemukan ide-ide kreatif dan solusi desain yang dapat menginspirasi Kamu dalam membangun berbagai web yang menarik. Selamat membaca!
+                    </p>
+                    <div class="btn-box">
+                      <a href="" class="btn1">
+                        Read More
+                      </a>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-md-6">
+                  <div class="img-box">
+                    <img src="{% static 'image/ya.png' %}" alt="">
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <ol class="carousel-indicators">
+          <li data-target="#customCarousel1" data-slide-to="0" class="active"></li>
+          <li data-target="#customCarousel1" data-slide-to="1"></li>
+          <li data-target="#customCarousel1" data-slide-to="2"></li>
+        </ol>
+      </div>
+
+    </section>
+    <!-- end slider section -->
+
   <footer class="bg-primary text-white text-center text-lg-start">
 
     <section class="d-flex justify-content-center justify-content-lg-between p-4 border-bottom">
