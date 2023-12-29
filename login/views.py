@@ -15,7 +15,7 @@ def login_view (request):
 
         if user is not None:
             login(request, user)
-            return redirect('/login/dashboard')
+            return redirect('/dashboard')
         
     template  = loader.get_template('login.html')
     context = {'form': form}
