@@ -1,7 +1,7 @@
 from django.shortcuts import render, redirect
 from django.http import HttpResponse
 from django.template import loader
-from django.contrib.auth import authenticate, login
+from django.contrib.auth import authenticate, login, logout
 from .forms import FormLogin
 # Create your views here (login).
 
@@ -20,3 +20,9 @@ def login_view (request):
     template  = loader.get_template('login.html')
     context = {'form': form}
     return HttpResponse(template.render(context, request))
+
+
+def logout_view(request):
+    logout(request)
+    request.session.flush()
+    return redirect('/login/')
