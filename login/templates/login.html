@@ -52,6 +52,7 @@
         <br>
         <br>
         <br>
+        <div class="form-container">
           <form class="user" action="" method="POST">
             {% csrf_token %}
             <!-- username input -->
@@ -78,10 +79,11 @@
             </div>
   
             <div class="text-center text-lg-start mt-4 pt-2">
-              <button type="submit" value="login" name="submit" class="btn btn-primary btn-lg"
+              <button type="submit" class="btn btn-primary btn-lg"
                 style="padding-left: 2.5rem; padding-right: 2.5rem;">Login</button>
             </div>
           </form>
+        </div>
         </div>
       </div>
     </div>

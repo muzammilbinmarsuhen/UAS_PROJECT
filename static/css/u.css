@@ -1,10 +1,49 @@
-.divider:after,
-.divider:before {
-content: "";
-flex: 1;
-height: 1px;
-background: #eee;
-}
 .h-custom {
-height: calc(100% - 73px);
+  height: calc(100% - 73px);
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  background-color: #0c1022; 
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  color: white;
+}
+
+.form-container {
+  border: 2px solid transparent;
+  border-radius: 15px;
+  overflow: hidden; 
+  position: relative; 
+}
+
+@keyframes gradientAnimation {
+  0% {
+    border-image-source: linear-gradient(45deg, #f70d0d, #c4f63b, #03af59, #3b82f6);
+  }
+  50% {
+    border-image-source: linear-gradient(45deg, #3b82f6, #03af59, #c4f63b, #f70d0d);
+  }
+  100% {
+    border-image-source: linear-gradient(45deg, #03af59, #f70d0d, #3b82f6, #c4f63b);
+  }
+}
+
+.form-container {
+  border-image: linear-gradient(45deg, #f70d0d, #c4f63b, #03af59, #3b82f6);
+  border-image-outset: 5px;
+  border-image-repeat: stretch;
+  border-image-slice: 1;
+  animation: gradientAnimation 2s ease infinite; 
+}
+
+.user {
+  padding: 20px;
+}
+
+.form-container label,
+.form-container a.text-body{
+  color:white;
 }
