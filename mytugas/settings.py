@@ -42,7 +42,7 @@ INSTALLED_APPS = [
     'contact',
     'login',
     'dashboard',
-    'kampus',
+   
 ]
 
 MIDDLEWARE = [

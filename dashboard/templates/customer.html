@@ -1,0 +1,113 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block title %}
+Customer
+{% endblock title %}
+
+
+
+{% block menu %}
+
+<body>
+    
+    <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">Navbar</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+            aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav">
+                <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="{% url 'home' %}">Dashboard</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="{% url 'produk' %}">Produk</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+</body>
+{% endblock menu %}
+
+{% block content %}
+<br>
+
+<div class="row">
+    <div class="col-md-4">
+        <div class="card card-body">
+            <h5>Customer</h5>
+            <hr>
+            <a class="btn btn-outline-info btn-sm btn-block" href="">Update Customer</a>
+            <a class="btn btn-outline-danger btn-sm btn-block" href="">Delete Customer</a>
+        </div>
+    </div>
+
+    <div class="col-md-4">
+        <div class="card card-body">
+            <h5>Contact Informasi</h5>
+            <hr>
+            <p>Name : {{customer.name}}</p>
+            <p>Email: {{customer.email}}</p>
+            <p>Phone: {{customer.phone}}</p>
+        </div>
+    </div>
+
+    <div class="col-md-4">
+        <div class="card card-body">
+            <h5>Total Order</h5>
+            <hr>
+            <h1 style="text-align: center; padding: 10px">{{order_count}}</h1>
+        </div>
+    </div>
+</div>
+
+<br>
+
+<div class="row">
+    <div class="col">
+        <div class="card card-body">
+            <form method="get">
+                <button class="btn btn-primary" type="submit">Search</button>
+            </form>
+        </div>
+    </div>
+</div>
+
+<br>
+
+<div class="row">
+    <div class="col-md">
+        <div class="card card-body">
+            <table class="table table-sm">
+                <tr>
+                    <th>Produk</th>
+                    <th>Kategori</th>
+                    <th>Date Order</th>
+                    <th>Status</th>
+                    <th>Update</th>
+                    <th>Remove</th>
+                </tr>
+
+                {% for order in order %}
+                <tr>
+                    <td>{{order.produk}}</td>
+                    <td>{{order.produk.kategori}}</td>
+                    <td>{{order.date_created}}</td>
+                    <td>{{order.status}}</td>
+                </tr>
+                {% endfor %}
+
+            </table>
+        </div>
+    </div>
+</div>
+
+{% endblock content %}
+
+
+
+

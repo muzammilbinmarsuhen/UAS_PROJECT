@@ -1,0 +1,23 @@
+{% extends 'base.html' %}
+{% load static %}
+
+
+{% block title %}
+    Order_create
+{% endblock title %}
+
+{% block menu %}
+
+
+{% endblock menu %}
+
+{% block content %}
+<form action="" method="POST">
+    {% csrf_token %}
+    <div>
+        {{form}}
+    </div>
+    <input type="submit" name="Submit">
+</form>
+
+{% endblock content %}
